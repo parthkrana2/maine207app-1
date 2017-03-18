@@ -1,0 +1,92 @@
+
+<div class="card" ng-controller="MDDialogCtrl">
+   <div class="card-heading bg-primary">
+      <div class="card-title">Maine East Clubs/Sports</div>
+   </div>
+   <div class="card-body">
+  <center> <h4>Click/Tap on a club or sport for more information.</h4> </center>
+
+      <div>
+
+         <md-button class="md-primary" ng-click="showAdvanced($event)">Rotary Interact</md-button>
+
+      </div>
+   </div>
+   <!-- Dialog inline template for demo-->
+   <script type="text/ng-template" id="dialog1.tmpl.html">
+      <md-dialog aria-label="Mango (Fruit)">
+      <form>
+      <md-toolbar>
+      <div class="md-toolbar-tools">
+      <h2>Maine East Rotary Interact</h2>
+      <span flex></span>
+      <md-button class="md-icon-button" ng-click="answer('not applicable')">
+      <md-icon md-svg-src="app/img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+      </md-button>
+      </div>
+      </md-toolbar>
+      <md-dialog-content>
+      <div>
+    <center>    <img style="margin: auto; max-width: 50%; align="middle";"  alt="Lush mango tree" src="http://i.imgur.com/sKbzlWG.png"> </center>
+
+
+      <h4>
+Meeting time/location: <h5>Membership meetings are 2 to 3 times in either student cafe, faculty lodge, or room 123. Officer
+meetings are usually once a week in room 123. Email reminders will be sent out.</h5>
+    </h4>
+
+  <h4>
+    Sponsor(s): <h5>John Schwan, CTE Department (jschwan@maine207.org) & Shawn Farrington, CTE Department (sfarrington@maine207.org)</h5>
+  </h4>
+
+  <h4>
+    Club Website: <h5><a href="https://eastrotary.org/">eastrotary.org</a></h5>
+  </h4>
+
+    <h4>
+
+School year calendar:
+<h5>Membership meeting: Late September or October</h5>
+
+<h5>Park Ridge Charity Classic Run: September</h5>
+
+<h5>Candy Sales: November</h5>
+
+<h5>WGN Christmas Toy Drive: Late December</h5>
+
+<h5>Rotary Youth Leadership Awards: March and April</h5>
+
+<h5>Digital Literacy: Varied</h5>
+
+<h5>Mentorship: Varied</h5>
+
+    </h4>
+
+    <h4>
+      Club Description: <h5>Rotary Interact at Maine East High School is the largest, most
+      prestigious club in the world. The club offers invaluable benefits to its members including
+      leadership, scholarship, mentorship, and scholarship opportunities. Each year Rotary Interact
+      members at Maine East get involved in projects various projects including the WGN Christmas Toy
+      Drive, annual dodgeball tournament for global iniciative, digital litarcy, and other side events.</h5>
+
+      <h5>Rotary Interact is Rotary International's service club for young people ages 12 to 18. Interact clubs
+        are sponsored by individual Rotary clubs. For more info on Rotary International visit <a href="https://www.rotary.org">rotary.org</a> </h5>
+    </h4>
+
+
+      </div>
+      </md-dialog-content>
+      <div class="md-actions" layout="row">
+      <md-button href="#" target="_blank" hide show-md>
+
+      </md-button>
+      <span flex></span>
+
+      <md-button ng-click="answer('useful')" class="md-primary">
+      Done
+      </md-button>
+      </div>
+      </form>
+      </md-dialog>
+   </script>
+</div>
