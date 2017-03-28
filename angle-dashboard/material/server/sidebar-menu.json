@@ -36,21 +36,21 @@
 
   {
     "text": "Clubs/Sports",
-    "sref": "app.buttons",
+    "sref": "app.faq",
     "icon": "icon-users",
     "translate": "Clubs/Sports"
   },
 
   {
     "text": "Project 11",
-    "sref": "",
+    "sref": "app.panels",
     "icon": "icon-users",
     "translate": "Project 11"
   },
 
   {
     "text": "Announcements",
-    "sref": "",
+    "sref": "app.notifications",
     "icon": "icon-users",
     "translate": "Announcements"
   },
