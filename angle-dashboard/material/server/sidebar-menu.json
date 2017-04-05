@@ -7,66 +7,90 @@
   {
     "text": "Home",
     "sref": "app.welcome",
-    "icon": "icon-tag"
+    "icon": "icon-home"
   },
-
-
 
 
   {
     "text": "Bell Schedule",
     "sref": "app.template",
-    "icon": "icon-bell",
+    "icon": "fa fa-bell",
     "translate": "Bell Schedule"
-  },
-  {
-    "text": "School Calendar",
-    "sref": "app.whiteframe",
-    "icon": "icon-calendar",
-    "translate": "School Calendar"
   },
 
   {
     "text": "Lunch Menu",
     "sref": "app.navtree",
-    "icon": "icon-clone",
+    "icon": "fa fa-cutlery",
     "translate": "Lunch Menu"
   },
+
+  {
+    "text": "Announcements",
+    "sref": "app.notifications",
+    "icon": "fa fa-bullhorn",
+    "translate": "Announcements"
+  },
+
+  {
+    "text": "School Calendar",
+    "sref": "app.whiteframe",
+    "icon": "fa fa-calendar",
+    "translate": "School Calendar"
+  },
+
+
 
 
   {
     "text": "Clubs/Sports",
-    "sref": "app.buttons",
-    "icon": "icon-users",
+    "sref": "app.faq",
+    "icon": "fa fa-users",
     "translate": "Clubs/Sports"
   },
 
   {
     "text": "Project 11",
-    "sref": "",
-    "icon": "icon-users",
+    "sref": "app.panels",
+    "icon": "fa fa-list",
     "translate": "Project 11"
   },
 
-  {
-    "text": "Announcements",
-    "sref": "",
-    "icon": "icon-users",
-    "translate": "Announcements"
-  },
 
   {
     "text": "Bus Schedule",
     "sref": "",
-    "icon": "icon-users",
+    "icon": "fa fa-bus",
     "translate": "Bus Schedule"
   },
 
   {
     "text": "School Map",
     "sref": "",
-    "icon": "icon-users",
+    "icon": "fa fa-map",
     "translate": "School Map"
+  },
+
+  {
+    "text": "Teacher Availability",
+    "sref": "app.carousel",
+    "icon": "fa fa-book",
+    "translate": "Teacher Availability"
+  },
+
+  {
+    "text": "Finals Grade Calculator",
+    "sref": "app.calendar",
+    "icon": "fa fa-calculator",
+    "translate": "Finals Grade Calculator"
+  },
+
+  {
+    "text": "Facility Hours",
+    "sref": "app.blog",
+    "icon": "fa fa-clock-o",
+    "translate": "Facility Hours"
   }
+
 
 ]

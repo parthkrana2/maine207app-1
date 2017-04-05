@@ -1,41 +1,87 @@
-<h3>Full Calendar
-   <small>Drag and Drop events and tasks</small>
-</h3>
-<!-- START row-->
-<div class="calendar-app" ng-controller="CalendarController">
-   <div class="row">
-      <div class="col-lg-3 col-md-4">
-         <!-- START panel-->
-         <div class="panel panel-default">
-            <div class="panel-heading">Angular UI Calendar</div>
-            <div class="panel-body">
-               <p>UI.calendar is a complete AngularJS directive for the Arshaw FullCalendar.</p>
-               <p>FullCalendar is a drag-n-drop jQuery plugin for displaying events on a full-sized calendar.</p>
-               <p>
-                  <strong>A JavaScript event calendar. Customizable and open source.</strong>
-               </p>
-            </div>
-            <div class="panel-body" ng-if="alertMessage">
-               <p>Messages:</p>
-               <div class="box-placeholder">{{alertMessage}}</div>
-            </div>
-         </div>
-      </div>
-    
-                        <div class="panel-body" ng-if="alertMessage">
-                           <p>Messages:</p>
-                           <div class="box-placeholder">{{alertMessage}}</div>
-                        </div>
-                     </div>
-                  </div>
-      <div class="col-lg-9 col-md-8">
-         <div class="panel panel-default">
-            <div class="panel-heading">Calendar</div>
-            <div class="panel-body">
-               <!-- START calendar-->
-               <div class="calendar" ui-calendar="uiConfig.calendar" ng-model="eventSources"></div>
-            </div>
-         </div>
+<html>
+<head>
+   <SCRIPT LANGUAGE="JavaScript">
+   function round(value, decimals) {   //the function to round a number to a certain number of decimals
+   return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
+   function myFunction(form) {
+   var x = form.x.value;
+   var y = form.y.value;
+   var z = form.z.value;
+   var finalWeight = z / 100;
+   var gradeWeight = 1 - finalWeight;
+   var need = round(((y - (x * gradeWeight)) / (finalWeight)), 2); //will round the calculated number to 2 decimals
+   var message
+
+   if (need<70) {
+           var message = "You don't even need to bother studying."
+       }
+
+   if (70<need<80) {
+           var message = "Things could be worse."
+       }
+
+     if (80<need<94) {
+           var message = "You'll do fine."
+       }
+
+   if (94<need<100) {
+           var message = "Good luck!"
+       }
+
+   if (need>100) {
+           var message = "Just give up."
+       }
+
+   if (isNaN(x)||x=="" && isNaN(y)||y=="" && isNaN(z)||z=="") { //if all the fields are empty or not numbers
+   alert ("Please fill out the form");
+}
+else {
+   alert ("You need a " + need + "% on the final to get at least a " +y+ "% in the class. " + message);
+}
+}
+   </script>
+
+</head>
+
+<body>
+
+
+<div class="card" ng-controller="MDSelectCtrl as selectctrl">
+   <div class="card-heading bg-primary">
+      <div class="card-title">Finals Grade Calculator</div>
+   </div>
+   <div class="card-body">
+      <h1 class="md-title">This calculator will help you determine what grade you need on your next test to maintain a specific grade.
+</h1>
+      <div layout="row">
+<form>
+         <md-input-container>
+            <label>Your current grade (%):</label>
+            <input class="field" type="text" maxlength="4" name="x" value=""/>
+         </md-input-container>
+</br>
+         <md-input-container>
+            <label>You want at least a (%):</label>
+            <input class="field" type="text" maxlength="4" name="y" value=""/>
+         </md-input-container>
+       </br>
+
+         <md-input-container>
+            <label>Your final is worth (%):</label>
+            <input class="field" type="text" maxlength="4" name="z" value=""/>
+         </md-input-container>
+       </br>
+       <md-button class="md-raised md-primary" type="submit" value="What do I need on my final?" onClick="myFunction(this.form)">What do I need on my final?</md-button>
+
+</form>
       </div>
    </div>
+
 </div>
+
+
+
+
+</body>
+</html>
